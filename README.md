@@ -6,7 +6,7 @@ Appendix 3 implements the multi-compartment Darcy porous media flow model on 3 c
 
 FEniCS 2018.1.0 is required. FEniCS can be installed via the standard Ubuntu package manager apt-get.
 
-To run any one the Appendices on FEniCS, use the Ubuntu terminal to locate the directory where the python file is located and enter the following line in the terminal and hit enter:
+To run any one of the above Appendices on FEniCS, use the Ubuntu terminal to locate the directory where the python file is located and enter the following line in the terminal and hit enter:
 
 python3 file-name.py
 
