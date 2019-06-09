@@ -8,6 +8,6 @@ FEniCS 2018.1.0 is required. FEniCS can be installed via the standard Ubuntu pac
 
 To run any one the Appendices on FEniCS, use the Ubuntu terminal to locate the directory where the python file is located and enter the following line in the terminal and hit enter:
 
-python3 <file name.py>
+python3 file name.py
 
 Paraview v5.x is required to view the numerical output.
