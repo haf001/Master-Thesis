@@ -90,13 +90,14 @@ def run_solver():
     f_1 = 0.0 * mm**3/s
     f_2 = 0.0 * mm**3/s
     f_3 = 1e-3 * mm**3/s
-
+    #Both f_1 and f_2 are set at zero so the compartments 1 and 2 act only as conduits and conduct flow of fluid through them without adding any pressure to the system. This way, fluid flow is dictated by pressure gradients and beta values.
+    #f_3 is set at a minimal value 1e-3 so the compartment 3 acts as a sink for the fluid to pass through to its right side. Using a minimal value to keep the pressure added to the system at a minimal level so flow is dictated mainly by pressure gradient and beta values.
     f1 = Constant(f_1)
     f2 = Constant(f_2)
     f3 = Constant(f_3)
 
     p = solver((f1, f2, f3), phi, K_1, K_2, K_3, b_12_val, b_23_val, mesh, 2)
-    # Pressure, p above is the coefficient vector of our mixed function space. To obtain components:
+    # Pressure, p above is the coefficient vector of the mixed function space. To obtain components:
 
     p_1, p_2, p_3 = p.split(deepcopy=True)
 
