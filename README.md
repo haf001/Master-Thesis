@@ -12,4 +12,4 @@ python3 file-name.py
 
 Paraview v5.x is required to view the numerical output.
 
-For information on the multi-compartment poro-elestic Python codes, see https://github.com/haf001/multi-compartment_poroelastic and https://github.com/haf001/poroelastic
+For information on the multi-compartment poro-elastic Python codes, see https://github.com/haf001/multi-compartment_poroelastic and https://github.com/haf001/poroelastic
